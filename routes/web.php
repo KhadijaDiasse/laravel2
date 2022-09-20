@@ -24,5 +24,13 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
 Route::get('inscription', [PostController::class, 'index']);
 Route::post('store-form', [PostController::class, 'store']);
+
+
+Route::get('posts', function () {
+    $posts=DB::table('posts')->get();
+    return view('posts', compact('posts'
+));
+});
