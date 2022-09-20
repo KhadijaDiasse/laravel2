@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//hjkk 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
