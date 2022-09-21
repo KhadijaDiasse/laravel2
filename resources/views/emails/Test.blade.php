@@ -1,7 +1,13 @@
-
-<?php $users = User::findOrFail($id);
-
-foreach($users as $user){
-
-        Mail::to($request->user())->send($user->mail);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mon Super mail</h1>
+    <p>Bonjour,{{ $data['name'] }}</p>
+</body>
+</html>
