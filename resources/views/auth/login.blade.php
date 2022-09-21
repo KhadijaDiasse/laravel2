@@ -54,4 +54,5 @@
             </div>
         </form>
     </x-auth-card>
+    <script type=text/javascript src="/js/app.js"> </script>
 </x-guest-layout>
