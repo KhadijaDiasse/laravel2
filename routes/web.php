@@ -26,8 +26,8 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 Route::get('inscription', [PostController::class, 'index']);
-Route::post('store-form', [PostController::class, 'store']);
 
+Route::post('store-form', [PostController::class, 'store']);
 
 Route::get('posts', function () {
     $posts=DB::table('posts')->get();
