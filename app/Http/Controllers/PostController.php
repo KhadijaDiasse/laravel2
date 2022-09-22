@@ -13,12 +13,23 @@ class PostController extends Controller
     }
     public function store(Request $request)
     {
-        $post = new Post;
-        $post->email= $request->email;
-        $post->objet= $request->objet;
-        $post->message= $request->message;
-        $post->save();
-        return redirect('inscription');
+        
+        // $post = new Post;
+        
+        $a = $request['email'];
+        
+        $b= $request->objet;
+        $c= $request->message;
+        $name = explode(' ' , $a);
+        // print_r (explode(',', $a));
+        //  $traitemail=explode(" ", $a, );
+        // $post->objet= $request->objet;
+        // $post->message= $request->message;
+        // $post->save();
+        dd($name);
+        
+    
+        // return redirect('inscription');
         // ->with('status', 'Blog Post Form Data Has Been inserted');
     }
 }

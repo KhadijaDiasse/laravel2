@@ -30,7 +30,7 @@
         <tbody>
             @foreach ($posts as $post)
     <tr>
-        <td > <a href="{{ url('post/' .$post->id)}}" >{{$post->destinataire }}</td>
+        <td > <a href="{{ url('post/' .$post->id)}}" >{{$post->email}}</td>
          <td>{{ $post->objet }}</td>
          <td>{{ $post->message }}</td>
     </tr> 

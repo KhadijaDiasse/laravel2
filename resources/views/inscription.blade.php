@@ -17,7 +17,7 @@
             <h3>Envoyer un message</h3>
         </div>
         <div class="mb-5 w-50">
-            <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Destinataire">
+            <input type="text" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Destinataire">
         </div>  
             <div class="mb-5 w-50">
             
